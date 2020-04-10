@@ -1,0 +1,1 @@
+/usr/bin/mpic++  -g   CMakeFiles/MPI.dir/main2.cpp.o  -o MPI 

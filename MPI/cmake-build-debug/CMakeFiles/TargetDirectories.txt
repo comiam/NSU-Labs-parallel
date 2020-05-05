@@ -1,3 +1,0 @@
-/home/maxim/CLionProjects/MPI/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/maxim/CLionProjects/MPI/cmake-build-debug/CMakeFiles/MPI.dir
-/home/maxim/CLionProjects/MPI/cmake-build-debug/CMakeFiles/edit_cache.dir

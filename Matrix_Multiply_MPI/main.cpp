@@ -122,15 +122,6 @@ void build_result_matrix(double *partC, double *C, MPI_Comm grid_comm, const int
     MPI_Type_create_resized(recv_vector_t, 0, n3 / dims[X] * sizeof(double), &resized_recv_vector_t);
     MPI_Type_commit(&resized_recv_vector_t);
 
-    int typeSizeBytes;
-    MPI_Type_size(resized_recv_vector_t, &typeSizeBytes);
-
-#ifdef DEBUG
-    printf("%lu\n", typeSizeBytes / sizeof(MPI_DOUBLE) / (n3 / (dims[X])));
-#endif
-
-    int typeSize = typeSizeBytes / ( (int)sizeof(MPI_DOUBLE) * (n3 / (dims[X])));
-
     for (int rank_i = 0; rank_i < comm_size; ++rank_i)
     {
         recvCounts[rank_i] = 1;
